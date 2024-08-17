@@ -15,8 +15,10 @@ class quizGame:
         print("\nLet's Start the Quiz . . . ")
         print("======================================================") 
 
+        qno = 0 #
         for questions in self.questionList:
-            qno = questions[0]
+            # qno = questions[0]
+            qno += 1  #
             print(f"\nQ{qno}. {questions[1]}")
             optno = 1
             for question in questions[2:6]:
@@ -54,7 +56,7 @@ class quizGame:
         print(f"Total marks obtained: {self.marks}")
         print(f"Total no. of correct answers: {self.correct_ans}")
         print(f"Total no. of wrong answers: {self.wrong_ans}")
-        print("======================================================\n") 
+        print("======================================================\n")
 
 
 questionList = [[1, "Who developed Python Programming Language?","Wick van Rossum","Rasmus Lerdorf","Guido van Rossum","Niene Stom",3],
